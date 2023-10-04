@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
+    <title>Filter Boxes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -18,14 +22,170 @@
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet" />
   </head>
-  <body class="bg-light">
+  <body class="">
+    <div class="container my-3">
+      <div class="row">
+        <div class="col-4">
+          <div class="card filters">
+            <div class="filter-box">
+              <header class="card-header">
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-box1"
+                  href="#">
+                  <i class="fa fa-chevron-down"></i>Marka</a
+                >
+              </header>
+              <div id="collapse-box1" class="collapse show">
+                <div class="card-body">
+                  <ul class="menu scroll">
+                    <li><a href="">Asus</a></li>
+                    <li><a href="">Lenovo</a></li>
+                    <li><a href="">HP</a></li>
+                    <li><a href="">Samsung</a></li>
+                    <li><a href="">MSI</a></li>
+                    <li><a href="">Dell</a></li>
+                    <li><a href="">HP</a></li>
+                    <li><a href="">Samsung</a></li>
+                    <li><a href="">MSI</a></li>
+                    <li><a href="">Dell</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-box">
+              <header class="card-header">
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-box2"
+                  href="#">
+                  <i class="fa fa-chevron-down"></i>Fiyat</a
+                >
+              </header>
+              <div id="collapse-box2" class="collapse show">
+                <div class="card-body">
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <label class="form-label" for="">En az</label
+                      ><input
+                        class="form-control"
+                        placeholder="5.000 TL"
+                        type="number" />
+                    </div>
+                    <div class="col-6">
+                      <label class="form-label" for="">En çok</label
+                      ><input
+                        class="form-control"
+                        placeholder="20.000 TL"
+                        type="number" />
+                    </div>
+                    <button class="btn w-100 btn-light mt-3">Uygula</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-box">
+              <header class="card-header">
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-box3"
+                  href="#">
+                  <i class="fa fa-chevron-down"></i>Ekran Boyutu</a
+                >
+              </header>
+              <div id="collapse-box3" class="collapse show">
+                <div class="card-body">
+                  <label class="checkbox-btn"
+                    ><input type="checkbox" /><span class="btn btn-light"
+                      >13.5 inç</span
+                    ></label
+                  >
+                  <label class="checkbox-btn"
+                    ><input type="checkbox" /><span class="btn btn-light"
+                      >14 inç</span
+                    ></label
+                  >
+                  <label class="checkbox-btn"
+                    ><input type="checkbox" /><span class="btn btn-light"
+                      >15 inç</span
+                    ></label
+                  >
+                  <label class="checkbox-btn"
+                    ><input type="checkbox" /><span class="btn btn-light"
+                      >17 inç</span
+                    ></label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-box">
+              <header class="card-header">
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-box4"
+                  href="#">
+                  <i class="fa fa-chevron-down"></i>Ram Kapasitesi</a
+                >
+              </header>
+              <div id="collapse-box4" class="collapse show">
+                <div class="card-body">
+                  <label for="" class="form-check mb-2"
+                    ><input type="checkbox" class="form-check-input" />
+                    <span class="form-check-label">16 GB</span></label
+                  ><label for="" class="form-check mb-2"
+                    ><input type="checkbox" class="form-check-input" />
+                    <span class="form-check-label">32 GB</span></label
+                  ><label for="" class="form-check mb-2"
+                    ><input type="checkbox" class="form-check-input" />
+                    <span class="form-check-label">64 GB</span></label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-box">
+              <header class="card-header">
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-box4"
+                  href="#">
+                  <i class="fa fa-chevron-down"></i>Ürün Modeli</a
+                >
+              </header>
+              <div id="collapse-box4" class="collapse show">
+                <div class="card-body">
+                  <label for="" class="form-check mb-2"
+                    ><input
+                      type="radio"
+                      class="form-check-input"
+                      name="urun-modeli" />
+                    <span class="form-check-label"
+                      >Oyun Bilgisayarı</span
+                    ></label
+                  ><label for="" class="form-check mb-2"
+                    ><input
+                      type="radio"
+                      class="form-check-input"
+                      name="urun-modeli" />
+                    <span class="form-check-label">Notebook</span></label
+                  ><label for="" class="form-check mb-2"
+                    ><input
+                      type="radio"
+                      class="form-check-input"
+                      name="urun-modeli" />
+                    <span class="form-check-label">Ultrabook</span></label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
